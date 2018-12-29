@@ -20,7 +20,7 @@ from pathlib import Path
 _session = requests.session()
 
 chino = LINE() #Login QR
-chino = LINE("Your Token") #Login Token
+#chino = LINE("Your Token") #Login Token
 chinoMid = chino.profile.mid
 chinoProfile = chino.getProfile()
 chinoProfile = chino.profile
@@ -28,9 +28,9 @@ chinoSettings = chino.getSettings()
 chinoPoll = OEPoll(chino)
 botStart = time.time()
 
-Owner = ["u6347d96f19332503ee90b48d630ec27e","u207798f56d8ab11343e1507cceef374e"]
-owner = ("u6347d96f19332503ee90b48d630ec27e","u207798f56d8ab11343e1507cceef374e")
-admin = ["u6347d96f19332503ee90b48d630ec27e","u207798f56d8ab11343e1507cceef374e"]
+Owner = ["u954d9f74bc255dad64dc89bf1601469c"]
+owner = ("u954d9f74bc255dad64dc89bf1601469c")
+admin = ["u954d9f74bc255dad64dc89bf1601469c"]
 #==============================================================================#
 
 
@@ -52,7 +52,7 @@ settings = {
     "flood": 0,
     "temp_flood" : False,
     "leave": True,
-    "autoAdd": True,
+    "autoAdd": False,
     "autoJoin": True,
     "autoLeave": False,
     "autoRead": False,
@@ -1125,7 +1125,7 @@ def chinoBot(op):
     	                           "expire": False
                                }
                             if cmd == "help":
-                                mid = "u085311ecd9e3e3d74ae4c9f5437cbcb5"
+                                mid = "u954d9f74bc255dad64dc89bf1601469c"
                                 helpMessage = helpmessage()
                                 chino.sendReplyMention(msg.id, to, helpMessage, [sender, mid])                                                         
                              
