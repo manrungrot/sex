@@ -1130,7 +1130,7 @@ def chinoBot(op):
 				                                                     
                              
                             elif cmd == "help":
-                                helpMessage1 = helpMessage1()                                
+                                helpMessage1 = helpmessage1()                                
                                 chino.sendReplyMessage(msg.id, to, str(helpMessage1))
                              
                             elif cmd == "settings":
