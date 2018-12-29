@@ -1125,9 +1125,8 @@ def chinoBot(op):
     	                           "expire": False
                                }
                             if cmd == "help":
-                                mid = "u954d9f74bc255dad64dc89bf1601469c"
                                 helpMessage = helpmessage()
-                                chino.sendReplyMention(msg.id, to, helpMessage, [sender, mid])                                                         
+                                chino.sendReplyMention(msg.id, to, str(helpMessage))                                                     
                              
                             elif cmd == "settings":
                                 helpSettings = helpsettings()                                
@@ -1499,7 +1498,7 @@ def chinoBot(op):
                                 chino.generateReplyMessage(msg.id)
                                 contact = chino.getContact(sender)        
                                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                chino.sendReplyMention(msg.id, to, '[ Profile ]\n@!   ',[sender])
+                                #chino.sendReplyMention(msg.id, to, '[ Profile ]\n@!   ',[sender])
                                 chino.sendReplyMessage(msg.id,to, "Bagas",contentMetadata={'vCard': 'BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:ANDROID 8.13.3 Android OS 4.4.4\r\nFN:\\Bagas Gans Here'+'\nTEL;TYPE=mobile:'+chino.getContact(sender).statusMessage+'\r\nN:?;\\,\r\nEND:VCARD\r\n', 'displayName': chino.getContact(sender).displayName},contentType=13)                                
 #Self
                             elif cmd == "mymid":
