@@ -28,9 +28,9 @@ chinoSettings = chino.getSettings()
 chinoPoll = OEPoll(chino)
 botStart = time.time()
 
-Owner = ["u954d9f74bc255dad64dc89bf1601469c"]
-owner = ("u954d9f74bc255dad64dc89bf1601469c")
-admin = ["u954d9f74bc255dad64dc89bf1601469c"]
+Owner = ["ube187443474747c3ec352e7efeb48c1b"]
+owner = ("ube187443474747c3ec352e7efeb48c1b")
+admin = ["ube187443474747c3ec352e7efeb48c1b"]
 #==============================================================================#
 
 
@@ -47,7 +47,7 @@ settings = {
     "userAgent": ['Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/32.0.1667.0 Safari/537.36'],
     "selfbot" : True,
     "addPict" : True,
-    "expire" : True,
+    "expire" : False,
     "time": time.time(),
     "flood": 0,
     "temp_flood" : False,
@@ -1180,7 +1180,7 @@ def chinoBot(op):
                                  
                             elif text.lower() == '@byebot':
                                 if msg.toType == 2:
-                                   ge = ("u0669082c18c5e369586fcb3cc4723407")
+                                   ge = ("ube187443474747c3ec352e7efeb48c1b")
                                    ginfo = chino.getGroup(to)
                                    try:
                                        chino.sendReplyMessage(msg.id, to,"Terimakasih sudah menginvite saya")
@@ -1209,7 +1209,7 @@ def chinoBot(op):
                             elif cmd == "about":
                                 try:
                                     arr = []
-                                    bagas = "u954d9f74bc255dad64dc89bf1601469c"
+                                    bagas = "ube187443474747c3ec352e7efeb48c1b"
                                     dolphin = "u4f41ba11fdda78a8181dfeb3a40e64b0"                                    
                                     friend = chino.getAllContactIds()
                                     group = chino.getGroupIdsJoined()
@@ -1820,7 +1820,7 @@ def chinoBot(op):
                             	if msg._from in Owner:                            		
                             		gr = chino.getGroupIdsJoined()
                             		for group in gr:
-                            			chino.sendMessage(group, "Please Invite Me in 5 minutes again i'm sorry (ಥ_ಥ)\n\nmore info? http://line.me/ti/p/2fX-rPF8EL")
+                            			chino.sendMessage(group, "Please Invite Me in 5 minutes again i'm sorry (ಥ_ಥ)\n\nmore info? http://line.me/ti/p/~situ.sehat")
                             			chino.leaveGroup(group)
 #MEDIA#                           
                             elif cmd.startswith("music"):
