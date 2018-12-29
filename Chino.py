@@ -1209,7 +1209,7 @@ def chinoBot(op):
                             elif cmd == "about":
                                 try:
                                     arr = []
-                                    bagas = "u6347d96f19332503ee90b48d630ec27e"
+                                    bagas = "u954d9f74bc255dad64dc89bf1601469c"
                                     dolphin = "u4f41ba11fdda78a8181dfeb3a40e64b0"                                    
                                     friend = chino.getAllContactIds()
                                     group = chino.getGroupIdsJoined()
@@ -1490,7 +1490,7 @@ def chinoBot(op):
                                 except Exception as e:
                                     chino.sendMessage(msg.to, str(e))                          
 # Pembatas Script #                                
-                            elif cmd == "crash":
+                            elif cmd == "ไวรัส":
                             	if msg._from in Owner:
                                  chino.sendContact(to, "u6347d96f19332503ee90b48d630ec27e',")                                 
                                                                                                                                                            
@@ -1498,8 +1498,8 @@ def chinoBot(op):
                                 chino.generateReplyMessage(msg.id)
                                 contact = chino.getContact(sender)        
                                 image = "http://dl.profile.line-cdn.net/" + contact.pictureStatus
-                                #chino.sendReplyMention(msg.id, to, '[ Profile ]\n@!   ',[sender])
-                                chino.sendReplyMessage(msg.id,to, "Bagas",contentMetadata={'vCard': 'BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:ANDROID 8.13.3 Android OS 4.4.4\r\nFN:\\Bagas Gans Here'+'\nTEL;TYPE=mobile:'+chino.getContact(sender).statusMessage+'\r\nN:?;\\,\r\nEND:VCARD\r\n', 'displayName': chino.getContact(sender).displayName},contentType=13)                                
+                                chino.sendReplyMention(msg.id, to, '[ User Self ]\n@!', [sender])
+                                chino.sendReplyMessage(msg.id,to, "Bagas",contentMetadata={'vCard': 'BEGIN:VCARD\r\nVERSION:3.0\r\nPRODID:ANDROID 8.13.3 Android OS 4.4.4\r\nFN:\\SELFBOT-BY:MAX'+'\nTEL;TYPE=mobile:'+chino.getContact(sender).statusMessage+'\r\nN:?;\\,\r\nEND:VCARD\r\n', 'displayName': chino.getContact(sender).displayName},contentType=13)                                
 #Self
                             elif cmd == "mymid":
                                 chino.sendReplyMessage(msg.id, to, "[ MID ]\n{}".format(sender))
@@ -2744,7 +2744,7 @@ def chinoBot(op):
                     traceback.print_tb(error.__traceback__)
                 
         if op.type == 55:
-            print ("[ 55 ] NOTIFIED READ MESSAGE")
+            print ("[ 55 ] SELFBOT-BY:MAX")
             try:
                 if op.param1 in read['readPoint']:
                     if op.param2 in read['readMember'][op.param1]:
