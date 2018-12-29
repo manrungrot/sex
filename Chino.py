@@ -792,14 +792,14 @@ def joox2(to,q,pl=""):
         chino.sendReplyMessage(msg.id, to,"Please cek your Sid >,<")
         print(traceback.format_exc())    
     
-def helpmessage():
+def helpmessage1():
     if settings['setKey'] == True:
         key = settings['keyCommand']
     else:
         key = ''
         tz = pytz.timezone("Asia/Jakarta")
         timeNow = datetime.now(tz=tz)
-    helpMessage =   "╭──「Help Message」───" + "\n" + \
+    helpMessage1 =   "╭──「Help Message」───" + "\n" + \
                     "│ " + key + "⌬ Myself" + "\n" + \
                     "│ " + key + "⌬ Group" + "\n" + \
                     "│ " + key + "⌬ Steal" + "\n" + \
@@ -821,7 +821,7 @@ def helpmessage():
                     "│ ⌬ Day : " + datetime.strftime(timeNow,'%Y-%m-%d') + "\n" + \
                     "│ ⌬ Time : " + datetime.strftime(timeNow,'%H:%M:%S') + " WIB" + "\n" + \
                     "╰────────" 
-    return helpMessage
+    return helpMessage1
 
 def helpmyself():
     if settings['setKey'] == True:
@@ -1124,9 +1124,14 @@ def chinoBot(op):
     	                           "flood": 0,
     	                           "expire": False
                                }
-                            if cmd == "help":
+                            if cmd == "help1":
                                 helpMessage = helpmessage()
-                                chino.sendReplyMention(msg.id, to, str(helpMessage))                                                     
+                                chino.sendReplyMention(msg.id, to, str(helpMessage))   
+				                                                     
+                             
+                            elif cmd1 == "help":
+                                helpMessage1 = helpMessage1()                                
+                                chino.sendReplyMessage(msg.id, to, str(helpMessage1))
                              
                             elif cmd == "settings":
                                 helpSettings = helpsettings()                                
