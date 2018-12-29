@@ -1129,7 +1129,7 @@ def chinoBot(op):
                                 chino.sendReplyMention(msg.id, to, str(helpMessage))   
 				                                                     
                              
-                            elif cmd1 == "help":
+                            elif cmd == "help":
                                 helpMessage1 = helpMessage1()                                
                                 chino.sendReplyMessage(msg.id, to, str(helpMessage1))
                              
