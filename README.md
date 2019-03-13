@@ -1,2 +1,1 @@
-# SELFBOT-BY:MAX
-Original as you see
+# SELFBOT-BY:MAN
